@@ -11,13 +11,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AgregarTarea();
+        AgregarBtn();
     }
 
-    public void AgregarTarea(){
-        FloatingActionButton btn_add = (FloatingActionButton) findViewById(R.id.btn_plus);
-        btn_add.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void AgregarBtn(){
+        FloatingActionButton miBtn = (FloatingActionButton) findViewById(R.id.btn_plus);
+        miBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
 
             }
         });
